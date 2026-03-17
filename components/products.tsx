@@ -23,7 +23,7 @@ const products = [
     color: "Titânio Natural",
     category: "pro-max",
     badge: "Mais Vendido",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1692845702708"
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium?wid=800&hei=800&fmt=png&qlt=100&.v=1692845702708"
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const products = [
     color: "Titânio Preto",
     category: "pro-max",
     badge: null,
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-blacktitanium?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1692845699311"
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-blacktitanium?wid=800&hei=800&fmt=png&qlt=100&.v=1692845699311"
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ const products = [
     color: "Titânio Azul",
     category: "pro",
     badge: "Oferta",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1692845696320"
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium?wid=800&hei=800&fmt=png&qlt=100&.v=1692845696320"
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ const products = [
     color: "Titânio Branco",
     category: "pro",
     badge: null,
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1692845701701"
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium?wid=800&hei=800&fmt=png&qlt=100&.v=1692845701701"
   },
   {
     id: 5,
@@ -71,7 +71,7 @@ const products = [
     color: "Rosa",
     category: "standard",
     badge: null,
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-pink?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1692923780020"
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-pink?wid=800&hei=800&fmt=png&qlt=100&.v=1692923780020"
   },
   {
     id: 6,
@@ -83,7 +83,7 @@ const products = [
     color: "Roxo Profundo",
     category: "pro-max",
     badge: "Última Unidade",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-deeppurple?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1663703841896"
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-deeppurple?wid=800&hei=800&fmt=png&qlt=100&.v=1663703841896"
   },
 ]
 
@@ -134,7 +134,7 @@ export function Products() {
             >
               <CardContent className="p-0">
                 {/* Product Image */}
-                <div className="relative aspect-square bg-muted/50 p-8">
+                <div className="relative aspect-square bg-muted/50 p-2">
                   {product.badge && (
                     <div className="absolute top-4 left-4 z-10">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary text-primary-foreground text-xs font-medium rounded-full">

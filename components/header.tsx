@@ -47,10 +47,10 @@ export function Header() {
             />
           </div>
           <div className="hidden sm:block">
-            <span className="text-lg font-semibold tracking-tight text-foreground">
+            <span className={`text-lg font-semibold tracking-tight ${isScrolled ? "text-foreground" : "text-white"}`}>
               Piá
             </span>
-            <span className="text-xs text-muted-foreground block -mt-1 tracking-widest uppercase">
+            <span className={`text-xs block -mt-1 tracking-widest uppercase ${isScrolled ? "text-muted-foreground" : "text-white/70"}`}>
               Importados
             </span>
           </div>
