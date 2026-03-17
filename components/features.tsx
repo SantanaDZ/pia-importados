@@ -37,44 +37,44 @@ const features = [
 
 export function Features() {
   return (
-    <section id="diferenciais" className="py-24 lg:py-32 bg-primary">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section id="diferenciais" className="py-12 lg:py-32 bg-primary">
+      <div className="mx-auto max-w-7xl px-4 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 text-accent text-sm font-medium mb-6">
+        <div className="text-center max-w-3xl mx-auto mb-8 lg:mb-20">
+          <span className="inline-flex items-center gap-2 px-3 py-1.5 lg:px-4 lg:py-2 rounded-full bg-accent/20 text-accent text-xs lg:text-sm font-medium mb-4 lg:mb-6">
             Por que escolher a Piá?
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-primary-foreground">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-primary-foreground">
             A experiência completa que você merece
           </h2>
-          <p className="mt-6 text-lg text-primary-foreground/70 leading-relaxed">
-            Mais do que vender iPhones, entregamos confiança, qualidade e um 
+          <p className="mt-3 lg:mt-6 text-sm lg:text-lg text-primary-foreground/70 leading-relaxed">
+            Mais do que vender iPhones, entregamos confiança, qualidade e um
             atendimento que faz a diferença.
           </p>
         </div>
 
         {/* Features Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-8">
           {features.map((feature, index) => (
-            <div 
+            <div
               key={feature.title}
-              className="group relative p-8 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 hover:bg-primary-foreground/10 transition-all duration-300"
+              className="group relative p-4 lg:p-8 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 hover:bg-primary-foreground/10 transition-all duration-300"
             >
               {/* Icon */}
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-accent/20 text-accent mb-6 group-hover:scale-110 transition-transform">
-                <feature.icon className="h-7 w-7" />
+              <div className="inline-flex items-center justify-center w-10 h-10 lg:w-14 lg:h-14 rounded-xl lg:rounded-2xl bg-accent/20 text-accent mb-3 lg:mb-6 group-hover:scale-110 transition-transform">
+                <feature.icon className="h-5 w-5 lg:h-7 lg:w-7" />
               </div>
 
               {/* Content */}
-              <h3 className="text-xl font-semibold text-primary-foreground mb-3">
+              <h3 className="text-sm lg:text-xl font-semibold text-primary-foreground mb-1.5 lg:mb-3">
                 {feature.title}
               </h3>
-              <p className="text-primary-foreground/70 leading-relaxed">
+              <p className="text-xs lg:text-base text-primary-foreground/70 leading-relaxed">
                 {feature.description}
               </p>
 
               {/* Number */}
-              <div className="absolute top-6 right-6 text-5xl font-bold text-primary-foreground/5">
+              <div className="absolute top-3 right-3 lg:top-6 lg:right-6 text-3xl lg:text-5xl font-bold text-primary-foreground/5">
                 {String(index + 1).padStart(2, "0")}
               </div>
             </div>
