@@ -46,7 +46,7 @@ export function Header() {
               priority
             />
           </div>
-          <div className="hidden sm:block">
+          <div>
             <span className={`text-lg font-semibold tracking-tight ${isScrolled ? "text-foreground" : "text-white"}`}>
               Piá
             </span>
